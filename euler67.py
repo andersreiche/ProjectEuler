@@ -1,11 +1,11 @@
-#Project euler problem 18 (Note, this code solves both problem 18 and problem 67)
+#Project euler problem 67 (Note, this code solves both problem 18 and problem 67)
 import numpy
 import time
 start = time.time()
 
 Tree = []
 #Read in the tree as rows of strings
-with open("Maximum_path_sum_1.txt", "r") as f:
+with open("p067_triangle.txt", "r") as f:
     content = f.read()
 
 #Transform the rows of strings into a 2d array of integers forming a trangle
@@ -16,7 +16,7 @@ for row in content.split('\n'):
         Tree.append(L)
             
 #Take the larger of two child nodes and add to the parent node. do this untill root is reached. 
-# root(Tree[0][0]) now has the value of the max path sum
+#root(Tree[0][0]) now has the value of the max path sum
 Layers = len(L)
 print(f"The tree has {Layers} layers")
 
