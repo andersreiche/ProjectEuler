@@ -12,6 +12,6 @@ tens = [len("twenty"), len("thirty"), len("fourty"), len("fifty"),
 hundred = len("hundred")
 thousaand = len("thousand")
 
-for i in range(1,1000):
+#for i in range(1,1000):
 
 print(ones_and_teens)
